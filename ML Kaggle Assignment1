@@ -168,12 +168,12 @@ Test1 = Test1.fillna(method='ffill')
 Xx=Test1.columns
 Xx=Xx.drop('Income in EUR')
 Xx=Test1[Xx].values
-Pred = regressor.predict(Xx)
+Pred = regressor.predict(Xx) #prediction
 #Pred =lasso_reg.predict(Xx)
 #Pred= rr.predict(Xx)
 
 import numpy
-numpy.savetxt("kaggle2.csv", Pred, delimiter=",")
+numpy.savetxt("kaggle2.csv", Pred, delimiter=",") #export and save file
 
 
 
